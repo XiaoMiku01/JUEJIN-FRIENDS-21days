@@ -1,0 +1,2 @@
+# JUEJIN-FRIENDS-21days
+JUEJIN FRIENDS 好好生活计划 21天自动签到脚本
