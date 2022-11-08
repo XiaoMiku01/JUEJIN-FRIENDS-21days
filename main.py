@@ -51,9 +51,13 @@ def day():
 
 if __name__ == "__main__":
     import schedule
+    import datetime
 
     day()  # 启动时先打卡一次
     schedule.every().day.at("00:01").do(day, day_n)
     while True:
         schedule.run_pending()
         time.sleep(1)
+        if datetime.datetime.now().year == 2023:
+            logging.info("2023年了，活动结束")
+            break
