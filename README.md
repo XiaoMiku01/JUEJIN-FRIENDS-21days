@@ -1,7 +1,7 @@
 # JUEJIN-FRIENDS-21days
 
-JUEJIN FRIENDS 好好生活计划 21 天自动签到脚本
-
+JUEJIN FRIENDS 好好生活计划 21 天自动签到脚本  
+活动地址 (https://juejin.cn/pin/7163551843082043399)
 ## 使用方法
 
 1. clone 本项目到本地
