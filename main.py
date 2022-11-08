@@ -54,7 +54,7 @@ if __name__ == "__main__":
     import datetime
 
     day()  # 启动时先打卡一次
-    schedule.every().day.at("00:01").do(day, day_n)
+    schedule.every().day.at("00:01").do(day)
     while True:
         schedule.run_pending()
         time.sleep(1)
