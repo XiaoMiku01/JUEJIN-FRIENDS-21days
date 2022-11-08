@@ -35,15 +35,15 @@ def day():
         try:
             r = requests.post(api, headers=headers, json=json)
             if r.status_code == 200 and r.json()['err_msg'] == 'success':
-                logging.info("day", day_n, "打卡成功")
+                logging.info(f"day{day_n} 打卡成功")
             else:
-                logging.error("day", day_n, "打卡失败", r.json())
+                logging.error(f"day{day_n} 打卡失败 {r.text}")
             break
         except Exception as e:
-            logging.error("day", day_n, "打卡失败", e, "重试中")
+            logging.error(f"day{day_n} 打卡失败 {e} 重试中")
             retry_times -= 1
             if retry_times == 0:
-                logging.error("day", day_n, "打卡失败", e, "重试次数超限，放弃")
+                logging.error(f"day{day_n} 打卡失败 重试次数超限，放弃")
                 break
             time.sleep(5)
     day_n += 1
