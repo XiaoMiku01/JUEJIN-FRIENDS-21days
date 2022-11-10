@@ -2,6 +2,11 @@
 
 JUEJIN FRIENDS 好好生活计划 21 天自动签到脚本  
 活动地址 (https://juejin.cn/pin/7163551843082043399)
+
+## 更新日志
+
+1. 2022-11-10 增加发表图片和一言，支持多账号
+
 ## 使用方法
 
 1. clone 本项目到本地
@@ -14,7 +19,7 @@ pip3 install -r requirements.txt
 3. 修改 `main.py` 文件中的 `cookie` 和 `content`
 
     > `cookie` 获取方式：登录掘金官网 (https://juejin.cn/)
-    > `F12` 打开开发者工具，切换到 `控制台` 标签页，输入 `document.cookie`，复制输出的值
+    > `F12` 打开开发者工具，切换到 `网络` 标签页，随便选个带有 `cookie` 的请求，找到 `cookie`，复制粘贴到 `main.py` 文件中的 `cookie` 变量中
 
 4. 运行脚本
 
