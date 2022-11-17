@@ -6,8 +6,8 @@ cookies = [
 ]
 # 支持多账号 格式为 ["""cookie1""", """cookie2""", """cookie3"""]
 
-# 打卡内容
-content = "每日打卡"
+# 打卡时间(24小时制)
+time_str = "00:01"
 
 ### 下面不用改
 import hmac
@@ -21,7 +21,7 @@ logging.basicConfig(
 )
 
 
-day_n = 3
+day_n = 1
 
 
 def random_str(n):
@@ -278,7 +278,7 @@ if __name__ == "__main__":
     import datetime
 
     day()  # 启动时先打卡一次
-    schedule.every().day.at("00:01").do(day)
+    schedule.every().day.at(time_str).do(day)
     while True:
         schedule.run_pending()
         time.sleep(1)
