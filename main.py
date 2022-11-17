@@ -239,7 +239,7 @@ def get_as_pic():
         return None
 
 
-def day():
+def day(*args, **kwargs):
     global day_n
     for cookie in cookies:
         api = "https://api.juejin.cn/content_api/v1/short_msg/publish"

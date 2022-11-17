@@ -27,6 +27,10 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 
+## 云函数部署
+
+函数入口改为：`main.day`
+
 ## 说明
 
 1. 本项目仅供学习交流使用，不得用于商业用途
